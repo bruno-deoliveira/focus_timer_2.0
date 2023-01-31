@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 12.617rem; 
+
+    background-color: #E5E5E5;
+    color: #323238;
+
+    display: grid;
+    place-items: center;
+    height: 100vh;
+
+    /*display: flex;
+    flex-direction: row;
+    gap: 19.2rem;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;*/
+}
+
+main{
+    background: #FFFFFF;
+    display: flex;
+    gap: 19.2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem ;
+}
+
+.timer{
+    display: flex;
+    margin-bottom: 1.7rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.buttons button:hover{
+    transform: scale(1.1);
+}
+
+.sons_right{
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+}
+
+.sons_right button{
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem;
+        gap: 4rem;
+    }
+}
